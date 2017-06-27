@@ -3,20 +3,33 @@
 
 *{
   box-sizing: border-box;
+
 }
-
-
-html,body{
+html ,body{
   ::-webkit-scrollbar {
     display: none;
     overflow: hidden;
+}
+.look{
+  display: none !important;
 }
 }
 .container{
   width: 100%;
   height: 100vh;
 }
-
+.pot{
+    bottom:15%;
+    position:absolute;
+    -webkit-animation:linear infinite alternate;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 5s;
+}
+@-webkit-keyframes run {
+    0% { left: 0;}
+    50%{ left : 100%;}
+    100%{ left: 0;}
+}
 .arrow_2_left{
   @include arrow(right);
   position: relative;
@@ -47,17 +60,7 @@ html,body{
   @include arrow(left);
 }
 
-.animacja{
-animation: Anime 1s linear;
-}
-@keyframes Anime {
-  0%{
-    margin-left: 0%;
-  }
-  100%{
-    margin-left: 100%;
-  }
-}
+
 //SLIDE 1//
   //max width 500px start
 @media (max-width:500px) {
@@ -80,7 +83,7 @@ animation: Anime 1s linear;
     }
   }
   .mobile_menu{
-    min-width: 100px;
+    max-width: 100px;
     float: left;
     position: absolute;
   }
@@ -100,7 +103,6 @@ animation: Anime 1s linear;
     p{
       font-size: 1em;
       align-self: center;
-      margin-right: 30px;
 
     }
   }
@@ -112,6 +114,7 @@ animation: Anime 1s linear;
     font-size: 2.5em;
     min-height: 100px;
     padding-top: 50px;
+
   }
   p{
     margin-top: 150px;
@@ -149,7 +152,7 @@ animation: Anime 1s linear;
     display: flex;
     justify-content: center;
     i{
-      color: #f1c40f;
+      color: blue;
       font-size: 3em;
       margin-top: 100px;
       &:hover{
@@ -165,6 +168,8 @@ animation: Anime 1s linear;
       color: #95a5a6;
       top: 230px;
       position: relative;
+
+
   }
 }
 .arrows_slide_2{
@@ -307,10 +312,13 @@ animation: Anime 1s linear;
     font-size: 3em;
     min-height: 100px;
     padding-top: 50px;
+    font-family: 'Josefin Sans', sans-serif;
   }
   p{
     margin-top: 50px;
     font-size: 2em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
   }
   .arrow_1{
     @include arrow(top);
@@ -473,6 +481,8 @@ animation: Anime 1s linear;
       text-align: center;
       color: #95a5a6;
       margin-top: 10px;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
     }
     p{
       font-size: 0.8em;
@@ -502,7 +512,7 @@ animation: Anime 1s linear;
         left: -70px;
         position: relative;
         top: -30px;
-
+        font-family: 'Josefin Sans', sans-serif;
     }
   }
 }
@@ -526,9 +536,49 @@ animation: Anime 1s linear;
   background-size: cover;
 }
 #slide_21{
-  background-image: url("../images/compas.jpg");
+  background-image: url("../images/200ww.gif");
   background-repeat: no-repeat;
   background-size: cover;
+  .gif{
+    height: 312px;
+    width: 200px;
+    background-image: url("../images/walkingdead.png");
+    position: relative;
+    top: 200px;
+    left: 500px;
+    background-position: 200px 0;
+  }
+  .btn_beer{
+    background-image: url("../images/button.jpg");
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    top: 200px;
+    left: 800px;
+  }
+  .btn_start{
+    // background-image: url("../images/button.jpg");
+    position: relative;
+    background-color: red;
+    z-index: 20;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    top: 200px;
+    left: 800px;
+  }
+  .play_again{
+    position: relative;
+    color:yellow;
+  }
+  .win{
+    background-color: #fff;
+    position: relative;
+    top: -300px;
+    left: 40px;
+    display: inline-block;
+  }
 }
 // SLIDE 3 start
 

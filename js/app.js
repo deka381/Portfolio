@@ -107,7 +107,11 @@ right_arr.addEventListener("click",function (event) {
 
   liAll[count].classList.add("visible");
 
+  liAll[count].classList.add("w3-animate-right");
+
 });
+
+
 left_arr.addEventListener("click",function (event) {
   liAll[count].classList.remove("visible");
   if (count <= 0) {
@@ -115,8 +119,55 @@ left_arr.addEventListener("click",function (event) {
   }
   count--;
   liAll[count].classList.add("visible");
+  liAll[count].classList.add("w3-animate-left");
+
 });
 
+//////////////////////////////////
+// DRINK BEER
+
+let btn_beer=document.querySelector(".btn_beer");
+let gif_div=document.querySelector(".gif");
+let p_win=document.querySelector(".win");
+let btn_start=document.querySelector(".btn_start");
+let play_again=document.querySelector(".play_again");
+btn_beer.style.display="none";
+play_again.style.display="none";
+let x=2;
+let time=0;
+
+
+btn_start.addEventListener("click",function (event) {
+  btn_start.style.display="none";
+  btn_beer.style.display="block";
+  let MyInterval=  setInterval(function () {
+    time++;
+    p_win.innerText="Twój czas to : " + time;
+  },100);
+
+
+
+
+btn_beer.addEventListener("click",function (event) {
+  x++;
+  let count=200*x;
+  gif_div.style.backgroundPosition=count+"px";
+  console.log(count + x);
+  if (count>2000) {
+    btn_beer.style.display="none";
+    play_again.style.display="block";
+    clearInterval(MyInterval);
+  }
+
+
+
+  if (count>1000) {
+
+  }
+})
+
+
+});
 
 
 function DomContentLoaded() {
