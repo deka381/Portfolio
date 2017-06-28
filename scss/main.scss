@@ -187,7 +187,7 @@ html ,body{
 }
 
 }
-.look{
+.look_menu_mobile{
   display: none;
 }
 .color{
@@ -536,48 +536,91 @@ html ,body{
   background-size: cover;
 }
 #slide_21{
-  background-image: url("../images/200ww.gif");
+  background-image: url("../images/bar1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  .gif{
-    height: 312px;
-    width: 200px;
-    background-image: url("../images/walkingdead.png");
+  .banner_beer{
+    width: 30%;
+    left: 35%;
+    text-align: center;
+    top: 20px;
+    font-size: 2em;
     position: relative;
+    border-radius: 7%;
+    background-size: contain;
+    box-shadow: 0px 0px 40px 20px #34495e;
+    color: #f1c40f;
+    font-weight: 700;
+    -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+  }
+  .gif{
+    height: 265px;
+    width: 320px;
+    background-image: url("../images/drink_beer.jpg");
+    position: absolute;
     top: 200px;
     left: 500px;
-    background-position: 200px 0;
+    background-position: -8400px 0;
+    box-shadow: 0px 0px 40px 40px #34495e;
+    -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
   }
   .btn_beer{
-    background-image: url("../images/button.jpg");
+    background-image: url("../images/200w.gif");
+    border-radius: 50%;
     position: relative;
     width: 100px;
     height: 100px;
     background-size: cover;
-    top: 200px;
+    top: 455px;
     left: 800px;
   }
   .btn_start{
-    // background-image: url("../images/button.jpg");
+    background-image: url("../images/bar_btn.png");
     position: relative;
-    background-color: red;
     z-index: 20;
     width: 100px;
     height: 100px;
     background-size: cover;
-    top: 200px;
+    top: 415px;
     left: 800px;
+    i{
+      color: #f1c40f;
+      font-size: 6em;
+    }
   }
   .play_again{
-    position: relative;
-    color:yellow;
+    position: absolute;
+    left:20%;
+    width: 158px;
+    height: 77px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 70vh;
+    font-size: 2em;
+    background-image: url("../images/again.png");
+    z-index: 10;
   }
   .win{
-    background-color: #fff;
-    position: relative;
-    top: -300px;
-    left: 40px;
+    font-family: 'Barrio', cursive;
+    color: #e74c3c;
+    background-color: black;
+    border-radius: 6%;
+    background-position: 100px;
+    position: absolute;
+    left: 30%;
+    width: 40%;
+    font-size: 3em;
     display: inline-block;
+    text-align: center;
+    top:20px;
   }
 }
 // SLIDE 3 start

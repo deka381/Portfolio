@@ -74,7 +74,6 @@ $(".fa-envelope_click").click(function (){
 
 
 $(".menu-burger").click(function () {
-
 		event.preventDefault();
   $(this).toggleClass("color");
   $(this).next().slideToggle();
@@ -131,49 +130,105 @@ let gif_div=document.querySelector(".gif");
 let p_win=document.querySelector(".win");
 let btn_start=document.querySelector(".btn_start");
 let play_again=document.querySelector(".play_again");
+let banner_beer=document.querySelector(".banner_beer");
+
 btn_beer.style.display="none";
 play_again.style.display="none";
-let x=2;
+let x=8400;
+let img_width=375;
 let time=0;
+let click=0;
+let MyInterval;
 
+
+
+
+function again() {
 
 btn_start.addEventListener("click",function (event) {
   btn_start.style.display="none";
+  banner_beer.style.display="none";
   btn_beer.style.display="block";
-  let MyInterval=  setInterval(function () {
+  MyInterval=  setInterval(function () {
     time++;
     p_win.innerText="Twój czas to : " + time;
   },100);
 
+});
 
 
 
 btn_beer.addEventListener("click",function (event) {
+  click++;
   x++;
-  let count=200*x;
-  gif_div.style.backgroundPosition=count+"px";
-  console.log(count + x);
-  if (count>2000) {
+
+
+  counter=x-img_width;
+  gif_div.style.backgroundPosition=counter+"px";
+  img_width=img_width + 350;
+  if (click>22) {
     btn_beer.style.display="none";
     play_again.style.display="block";
     clearInterval(MyInterval);
-  }
-
-
-
-  if (count>1000) {
 
   }
-})
-
 
 });
 
 
-function DomContentLoaded() {
-
 }
-DomContentLoaded();
+
+// btn_start.addEventListener("mouseover", function (event) {
+//   time=0;
+//   x=2;
+//   counter=0;
+// })
+  again();
+
+play_again.addEventListener("click", function (event) {
+  click=0;
+  time=0;
+  x=2;
+  counter=0;
+  img_width=375;
+  gif_div.style.backgroundPosition=-350+"px";
+  p_win.innerText='';
+  btn_start.style.display="block";
+  banner_beer.style.display="block";
+  play_again.style.display="none";
+  // again();
+})
+
+
+//////////////////////////
+//SLIDE23
+let textHi_back="Aby oglądnąć zejdź niżej";
+let textHi="Witam na stronie mojego portfolio!";
+let puls_back=document.querySelector(".puls2");
+let puls=document.querySelector(".puls");
+let length_puls2= textHi_back.length;
+
+let letter=0;
+let back_letter=length_puls2;
+
+let letterInterval=setInterval(function () {
+  letter++;
+  puls.innerText=textHi.substr(0,letter);
+  if (letter >33) {
+    clearInterval(letterInterval);
+  }
+},150);
+
+
+
+
+let back_letterInterval=setInterval(function () {
+  back_letter--;
+  puls_back.innerText=textHi_back.substr(back_letter,length_puls2);
+    if (back_letter <= 0) {
+    clearInterval(back_letterInterval);
+  }
+},200)
 
 
 
