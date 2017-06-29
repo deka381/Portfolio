@@ -256,6 +256,7 @@ const play_three_player=document.querySelector(".three_player");
 const How_many_players=document.querySelector(".How_many_players");
 const again_chine=document.querySelector(".again_chine");
 const task=document.querySelector(".task");
+const win50=document.querySelector(".field-50");
 player1.style.backgroundColor="red";
 cube.style.display="none";
 task.style.display="none";
@@ -308,10 +309,10 @@ btn_thru.addEventListener("click",function(){
     btn_thru.innerText="Rzuca Grasz 2"
 
     doIt.innerText="WYGRAŁEŚ";
-    if (count >50) {
+    if (count >=50) {
     again_chine_fn();
-    console.log(current);
-    console.log(current2);
+    win50.style.backgroundColor="gold";
+
 
 
   }
@@ -372,13 +373,11 @@ doIt2.innerText='';
 else{   //player 2
     btn_thru.style.backgroundColor="red"
       btn_thru.innerText="Rzuca Grasz 1"
-  if (count2 >50) {
+  if (count2 >=50) {
     doIt2.innerText="WYGRAŁEŚ";
     current=document.querySelector(".field-1");
     current2=document.querySelector(".field-2");
-
-    console.log(current);
-    console.log(current2);
+    win50.style.backgroundColor="gold";
     again_chine_fn();
 
   }
@@ -722,6 +721,7 @@ play_three_player.addEventListener("click",function (event) {
 again_chine.addEventListener("click",function () {
   How_many_players.style.display="block";
   again_chine.classList.remove("visible");
+  win50.style.background="none";
   btn_thru.style.display="none"
   cube.style.display="none";
   task.style.display="none";

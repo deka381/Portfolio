@@ -545,6 +545,19 @@ html ,body{
     height: 370px;
     margin: 10px auto;
     background-image: url("../images/road.jpg");
+    .field-1,.field-2,.field-3,.field-4,.field-5,.field-5,.field-6,.field-7,.field-8,.field-9,.field-27,.field-28,.field-29,.field-30,.field-31,.field-32,.field-33{
+      border-bottom: 6px solid black;
+    }
+    .field-11,.field-12,.field-13,.field-35{
+      border-left: 6px solid black;
+    }
+    .field-15,.field-16,.field-17,.field-18,.field-19,.field-20,.field-21,.field-22,.field-37,.field-38,.field-39,.field-40,.field-41,.field-42{
+      border-top: 6px solid black;
+    }
+    .field-24,.field-25{
+      border-right: 6px solid black;
+    }
+
   }
 
   #board  > div {
