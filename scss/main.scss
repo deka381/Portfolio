@@ -10,6 +10,7 @@ html ,body{
     display: none;
     overflow: hidden;
 }
+
 .look{
   display: none !important;
 }
@@ -531,9 +532,150 @@ html ,body{
 }
 }
 #slide_22{
-  background-image: url("../images/cup.jpg");
+  background-image: url("../images/sky.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  section#score {
+    width: 100%;
+  }
+
+  #board {
+    width: 740px;
+    height: 370px;
+    margin: 10px auto;
+    background-image: url("../images/road.jpg");
+  }
+
+  #board  > div {
+    border: 1px solid black;
+    float: left;
+    width: 74px;
+    height: 74px;
+    font-size: 10px;
+  }
+
+
+  section#score div {
+    width: auto;
+    height: 5em;
+    text-align: center;
+    padding: 0.5em;
+    background-color: rgba(211,211,211, 0.75);
+    border: 1px solid lightgray;
+    border-radius: 1px;
+    box-shadow: 1px 1px 5px 1px lightgray;
+    margin: 1em auto;
+  }
+
+
+
+  .cube{
+    width: 75px;
+    height: 75px;
+    background-position: -83px -83px;
+    background-image: url("../images/cube.png");
+    margin: auto;
+  }
+  #score{
+    font-family: 'Indie Flower', cursive;
+  }
+  .btn_thru{
+    width: 100px;
+    height: 50px;
+    border-radius: 14%;
+    display: none;
+    position: relative;
+    margin: auto;
+  }
+  .player1 {
+    background-image: url('../images/furry.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    float: left;
+  }
+
+  section#over {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    padding: 10px;
+    background-color: rgba(255, 255, 0, 0.75);
+  }
+
+  section#over pre {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bolder;
+    color: brown;
+  }
+
+  .invisible {
+    display: none;
+  }
+  .task{
+    
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+
+  .How_many_players{
+    display: block;
+  }
+  .How_many_players p{
+    display: inline-block;
+    list-style: none;
+    margin-top: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    &:hover{
+      text-decoration: underline;
+    }
+    a{
+      text-decoration: none;
+
+    }
+
+
+  }
+  .mix12{
+    background: #6968d8 !important; /* Old browsers */
+  background: -moz-linear-gradient(top, #6968d8 21%, #ff1115 100%) !important; /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #6968d8 21%,#ff1115 100%) !important; /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #6968d8 21%,#ff1115 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6968d8', endColorstr='#ff1115',GradientType=0 ) !important; /* IE6-9 */
+    z-index: 100;
+  }
+  .mix13{
+    background: #7cce65 !important; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #7cce65 44%, #ff1115 84%, #ff1115 100%) !important; /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #7cce65 44%,#ff1115 84%,#ff1115 100%) !important; /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #7cce65 44%,#ff1115 84%,#ff1115 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7cce65', endColorstr='#ff1115',GradientType=1 ) !important; /* IE6-9 fallback on horizontal gradient */
+  }
+  .mix23{
+    background: #7cce65 !important; /* Old browsers */
+    background: -moz-linear-gradient(left, #7cce65 44%, #2811f7 100%) !important; /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #7cce65 44%,#2811f7 100%) !important; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #7cce65 44%,#2811f7 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7cce65', endColorstr='#2811f7',GradientType=1 ) !important; /* IE6-9 */
+
+  }
+  .mix123{
+    background: #7cce65 !important; /* Old browsers */
+  background: -moz-linear-gradient(left, #7cce65 18%, #ed1014 55%, #2811f7 100%) !important; /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #7cce65 18%,#ed1014 55%,#2811f7 100%) !important; /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #7cce65 18%,#ed1014 55%,#2811f7 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7cce65', endColorstr='#2811f7',GradientType=1 ) !important; /* IE6-9 */
+    }
+
 }
 #slide_21{
   background-image: url("../images/bar1.png");

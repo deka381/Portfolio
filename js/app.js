@@ -91,34 +91,34 @@ let left_arr=document.querySelector(".arrow_2_left");//wybieram guzik next
 let right_arr=document.querySelector(".arrow_2_right");
 
 var liAll=[...document.querySelectorAll(".slider li")];
-var count=0;
+var countClick=0;
 
-liAll[count].classList.add("visible");
+liAll[countClick].classList.add("visible");
 
 right_arr.addEventListener("click",function (event) {
 
 
-  liAll[count].classList.remove("visible");
-  if (count>=liAll.length -1) {
-    count = -1;
+  liAll[countClick].classList.remove("visible");
+  if (countClick>=liAll.length -1) {
+    countClick = -1;
   }
-  count++;
+  countClick++;
 
-  liAll[count].classList.add("visible");
+  liAll[countClick].classList.add("visible");
 
-  liAll[count].classList.add("w3-animate-right");
+  liAll[countClick].classList.add("w3-animate-right");
 
 });
 
 
 left_arr.addEventListener("click",function (event) {
-  liAll[count].classList.remove("visible");
-  if (count <= 0) {
-    count=liAll.length;
+  liAll[countClick].classList.remove("visible");
+  if (countClick <= 0) {
+    countClick=liAll.length;
   }
-  count--;
-  liAll[count].classList.add("visible");
-  liAll[count].classList.add("w3-animate-left");
+  countClick--;
+  liAll[countClick].classList.add("visible");
+  liAll[countClick].classList.add("w3-animate-left");
 
 });
 
@@ -222,21 +222,439 @@ let letterInterval=setInterval(function () {
 
 
 
-let back_letterInterval=setInterval(function () {
-  back_letter--;
-  puls_back.innerText=textHi_back.substr(back_letter,length_puls2);
-    if (back_letter <= 0) {
-    clearInterval(back_letterInterval);
+let back_letterInterval=setTimeout(function () {
+  puls_back.innerText=textHi_back
+},5500)
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+//CHINCZYK//
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+const cube=document.querySelector(".cube");
+const btn_thru=document.querySelector(".btn_thru");
+const player1=document.querySelector(".field-1");
+player1.style.backgroundColor="red";
+const doIt=document.querySelector(".doIt");
+const doIt2=document.querySelector(".doIt2");
+const doIt3=document.querySelector(".doIt3");
+const play_two_player=document.querySelector(".two_player");
+const play_three_player=document.querySelector(".three_player");
+const How_many_players=document.querySelector(".How_many_players");
+const task=document.querySelector(".task");
+let turn=1;
+cube.style.display="none";
+task.style.display="none";
+function RandomNumber() {
+  return Math.floor((Math.random() * 6) + 1);
+  // return 5;
+}
+
+/////click cube
+let count=1;
+let count2=1
+let count3=1
+const arr=[
+  "Piją wszyscy","Pijesz Ty i kolega","Piją wszyscy oprócz Cb","Piją Chłopaki","Każ wypić komuś 2 razy",
+  "Wracasz na start!","Ktoś Pije dwa Razy","Pije ślicznotka, którą wybierzesz","Opuszczasz kojelkę",
+  "Jak skończy się alko to idziesz je kupić","Pijesz Tyle ile masz oczu","PIJ! :)","NIC","Piją Ci co mają wiek nieparzysty",
+  "Mateusz stawia WSZYSTKIM !","Cofasz się na pole 9","Nie masz przy sobie 10zł, pijesz","Pijecie wszyscy",
+  "Kto jest przed Tobą, pije","Ten kto ma najmniej monet przy sobie pije","Pije każdy kto ma siostrę","JEEEZUU pijżesz","Rzuć monetą, będzie orzeł to pij- jak prawdziwy POLAK",
+  "Wracasz na 7 i pijesz jeszcze raz","Piją wszyscy","Pijesz Ty i kolega","Piją wszyscy oprócz Cb","Piją Chłopaki",
+  "Każ wypić komuś 2 razy","Wracasz na start!","Ktoś Pije dwa Razy","Pije ślicznotka, którą wybierzesz","Opuszczasz kojelkę",
+  "Jak skończy się alko to idziesz je kupić","Pijesz Tyle ile masz oczu","PIJ! :)","NIC","Piją Ci co mają wiek nieparzysty",
+  "Mateusz stawia WSZYSTKIM !","Cofasz się na pole 9","Nie masz przy sobie 10zł, pijesz","Pijecie wszyscy",
+  "Kto jest przed Tobą, pije","Ten kto ma najmniej monet przy sobie pije","Pije każdy kto ma siostrę","JEEEZUU pijżesz","Rzuć monetą, będzie orzeł to pij- jak prawdziwy POLAK",
+  "Wracasz na 7 i pijesz jeszcze raz","Wraczasz na Start","WYGRAŁEŚ",
+];
+
+
+function Two_player() {
+
+btn_thru.addEventListener("click",function(){
+let current;
+let current2;
+  if (turn%2!==0) {
+
+    btn_thru.style.backgroundColor="blue"
+    btn_thru.innerText="Rzuca Grasz 2"
+
+  if (count >50) {
+    doIt.innerText="WYGRAŁEŚ";
+  }else{
+  player1.style.background="none";
+  current=document.querySelector(".field-"+count);
+  let numberClass=RandomNumber();
+  current.style.background="none";
+
+  count=count + numberClass;
+  let go=document.querySelector(".field-"+count);
+  go.style.backgroundColor="red";
+
+  doIt.innerText=arr[count];
+  doIt.style.color="red";
+  if (count == 5 || count == 49 || count==30) {
+    count=1;
+    current=document.querySelector(".field-1");
+    go.style.background="none";
+    current.style.backgroundColor="red";
   }
-},200)
+  if(count ==15 || count==39){
+    count=9;
+    current=document.querySelector(".field-9");
+    go.style.background="none";
+    current.style.backgroundColor="red";
+  }if(count ==23 || count ==47){
+    count=7;
+    current=document.querySelector(".field-7");
+    go.style.background="none";
+    current.style.backgroundColor="red";
+  }
+  if (numberClass == 1 ) {
+      cube.style.backgroundPosition="-12px";
+  } else if (numberClass == 2) {
+      cube.style.backgroundPosition="-83px";
+  } else if (numberClass == 3 ) {
+      cube.style.backgroundPosition="-83px -83px";
+  } else if (numberClass == 4 ) {
+      cube.style.backgroundPosition="-83px 85px";
+  } else if (numberClass == 5 ) {
+      cube.style.backgroundPosition="-225px";
+  } else if (numberClass == 6 ) {
+      cube.style.backgroundPosition="-155px";
+  }
+
+
+
+}
+doIt2.innerText='';
+}//Kociec PL1
 
 
 
 
+else{   //player 2
+    btn_thru.style.backgroundColor="red"
+      btn_thru.innerText="Rzuca Grasz 1"
+  if (count2 >50) {
+    doIt2.innerText="WYGRAŁEŚ";
+  }else{
+  player1.style.background="none";
+  let numberClass=RandomNumber();
+  current2=document.querySelector(".field-"+count2);
+  current2.style.background="none";
+
+  count2=count2 + numberClass;
+  let go2=document.querySelector(".field-"+count2);
+  go2.style.backgroundColor="blue";
+
+  doIt2.innerText=arr[count2];
+  doIt2.style.color="blue";
+  if (count == 5 || count == 49 || count==30) {
+    count2=1;
+    current2=document.querySelector(".field-1");
+    go2.style.background="none";
+    current2.style.backgroundColor="blue";
+  }
+  if(count2 ==15  || count==39){
+    count2=9;
+    current2=document.querySelector(".field-9");
+    go2.style.background="none";
+    current2.style.backgroundColor="blue";
+  }if(count2 ==24 || count ==47){
+    count2=7;
+    current2=document.querySelector(".field-7");
+    go2.style.background="none";
+    current2.style.backgroundColor="blue";
+  }
+  if (numberClass == 1 ) {
+      cube.style.backgroundPosition="-12px";
+  } else if (numberClass == 2) {
+      cube.style.backgroundPosition="-83px";
+  } else if (numberClass == 3 ) {
+      cube.style.backgroundPosition="-83px -83px";
+  } else if (numberClass == 4 ) {
+      cube.style.backgroundPosition="-83px 85px";
+  } else if (numberClass == 5 ) {
+      cube.style.backgroundPosition="-225px";
+  } else if (numberClass == 6 ) {
+      cube.style.backgroundPosition="-155px";
+  }
+
+
+  }
+doIt.innerText='';
+ }
+
+ let currnet_mix2=document.querySelector(".field-"+count2);
+ let currnet_mix1=document.querySelector(".field-"+count);
+ if (count==count2) {
+   currnet_mix1.classList.add("mix12")
+   currnet_mix2.classList.add("mix12");
+
+ }
+ else{
+   currnet_mix2.classList.remove("mix12");
+   currnet_mix1.classList.remove("mix12");
+ }
+ turn++;//Koniec PL2
+//
+});//koniec CLICK
+/////click cube
+
+}///koniec Two_player
+///////////////////////////
+// trzech graczy
+
+function Three_player() {
+
+btn_thru.addEventListener("click",function(){
+  if (turn==1) {
+    btn_thru.style.backgroundColor="blue"
+    btn_thru.innerText="Rzuca Grasz 2"
+  if (count >50) {
+    doIt.innerText="WYGRAŁEŚ";
+  }else{
+  player1.style.background="none";
+  let numberClass=RandomNumber();
+  let current=document.querySelector(".field-"+count);
+  current.style.background="none";
+
+  count=count + numberClass;
+  let go=document.querySelector(".field-"+count);
+  go.style.backgroundColor="red";
+
+  doIt.innerText=arr[count];
+  doIt.style.color="red";
+  if (count == 5 || count == 49 || count==30) {
+    count=1;
+    let current=document.querySelector(".field-1");
+    go.style.background="none";
+    current.style.backgroundColor="red";
+  }
+  if(count ==15 || count==39){
+    count=9;
+    let current=document.querySelector(".field-9");
+    go.style.background="none";
+    current.style.backgroundColor="red";
+  }if(count ==24 || count ==47){
+    count=7;
+    let current=document.querySelector(".field-7");
+    go.style.background="none";
+    current.style.backgroundColor="red";
+  }
+  if (numberClass == 1 ) {
+      cube.style.backgroundPosition="-12px";
+  } else if (numberClass == 2) {
+      cube.style.backgroundPosition="-83px";
+  } else if (numberClass == 3 ) {
+      cube.style.backgroundPosition="-83px -83px";
+  } else if (numberClass == 4 ) {
+      cube.style.backgroundPosition="-83px 85px";
+  } else if (numberClass == 5 ) {
+      cube.style.backgroundPosition="-225px";
+  } else if (numberClass == 6 ) {
+      cube.style.backgroundPosition="-155px";
+  }
+
+
+}
+ turn++;
+doIt2.innerText='';
+doIt3.innerText='';
+}//Kociec PL1
+
+
+
+else if(turn==2){   //player 2
+  btn_thru.style.backgroundColor="green"
+  btn_thru.innerText="Rzuca Grasz 3"
+  if (count2 >50) {
+    doIt2.innerText="WYGRAŁEŚ";
+  }else{
+  player1.style.background="none";
+  let numberClass=RandomNumber();
+  let current2=document.querySelector(".field-"+count2);
+  current2.style.background="none";
+
+  count2=count2 + numberClass;
+  let go2=document.querySelector(".field-"+count2);
+  go2.style.backgroundColor="blue";
+
+  doIt2.innerText=arr[count2];
+  doIt2.style.color="blue";
+  if (count2 == 5 || count2 == 49 || count==30) {
+    count2=1;
+    let current2=document.querySelector(".field-1");
+    go2.style.background="none";
+    current2.style.backgroundColor="blue";
+  }
+  if(count2 ==15 || count==39){
+    count2=9;
+    let current2=document.querySelector(".field-9");
+    go2.style.background="none";
+    current2.style.backgroundColor="blue";
+  }if(count2 ==24 || count ==47){
+    count2=7;
+    let current2=document.querySelector(".field-7");
+    go2.style.background="none";
+    current2.style.backgroundColor="blue";
+  }
+  if (numberClass == 1 ) {
+      cube.style.backgroundPosition="-12px";
+  } else if (numberClass == 2) {
+      cube.style.backgroundPosition="-83px";
+  } else if (numberClass == 3 ) {
+      cube.style.backgroundPosition="-83px -83px";
+  } else if (numberClass == 4 ) {
+      cube.style.backgroundPosition="-83px 85px";
+  } else if (numberClass == 5 ) {
+      cube.style.backgroundPosition="-225px";
+  } else if (numberClass == 6 ) {
+      cube.style.backgroundPosition="-155px";
+  }
+
+
+  }
+ turn++;
+doIt.innerText='';
+doIt3.innerText='';
+ }
 
 
 
 
+ else if (turn==3) {
+   btn_thru.style.backgroundColor="red"
+   btn_thru.innerText="Rzuca Grasz 1"
+   if (count3 >50) {
+     doIt3.innerText="WYGRAŁEŚ";
+   }else{
+   player1.style.background="none";
+   let numberClass=RandomNumber();
+   let current3=document.querySelector(".field-"+count3);
+   current3.style.background="none";
+
+   count3=count3 + numberClass;
+   let go3=document.querySelector(".field-"+count3);
+   go3.style.backgroundColor="green";
+
+   doIt3.innerText=arr[count3];
+   doIt3.style.color="green";
+   if (count3 == 5 || count3 == 49 || count==30) {
+     count3=1;
+     let current3=document.querySelector(".field-1");
+     go3.style.background="none";
+     current3.style.backgroundColor="green";
+   }
+   if(count3 ==15 || count==39){
+     count3=9;
+     let current3=document.querySelector(".field-9");
+     go3.style.background="none";
+     current3.style.backgroundColor="green";
+   }if(count3 ==24  || count ==47){
+     count3=7;
+     let current3=document.querySelector(".field-7");
+     go3.style.background="none";
+     current3.style.backgroundColor="green";
+   }
+   if (numberClass == 1 ) {
+       cube.style.backgroundPosition="-12px";
+   } else if (numberClass == 2) {
+       cube.style.backgroundPosition="-83px";
+   } else if (numberClass == 3 ) {
+       cube.style.backgroundPosition="-83px -83px";
+   } else if (numberClass == 4 ) {
+       cube.style.backgroundPosition="-83px 85px";
+   } else if (numberClass == 5 ) {
+       cube.style.backgroundPosition="-225px";
+   } else if (numberClass == 6 ) {
+       cube.style.backgroundPosition="-155px";
+   }
 
 
-     });
+   }
+   turn=1;
+ doIt.innerText='';
+ doIt2.innerText='';
+ }
+//Koniec PL2
+//
+let currnet_mix1=document.querySelector(".field-"+count);
+let currnet_mix2=document.querySelector(".field-"+count2);
+let currnet_mix3=document.querySelector(".field-"+count3);
+if (count==count2) {
+  currnet_mix2.classList.add("mix12");
+  currnet_mix1.classList.add("mix12");
+}else{
+  currnet_mix2.classList.remove("mix12");
+  currnet_mix1.classList.remove("mix12");
+}
+
+
+if (count==count3) {
+  currnet_mix3.classList.add("mix13");
+  currnet_mix1.classList.add("mix13");
+}else{
+  currnet_mix3.classList.remove("mix13");
+  currnet_mix1.classList.remove("mix13");
+}
+if (count2==count3) {
+  currnet_mix3.classList.add("mix23");
+  currnet_mix2.classList.add("mix23");
+}else{
+  currnet_mix2.classList.remove("mix23");
+  currnet_mix3.classList.remove("mix23");
+
+}
+
+
+if (count==count2 && count==count3 && count2==count3) {
+  currnet_mix1.classList.add("mix123");
+  currnet_mix2.classList.add("mix123");
+  currnet_mix3.classList.add("mix123");
+} else{
+  currnet_mix1.classList.remove("mix123");
+  currnet_mix2.classList.remove("mix123");
+  currnet_mix3.classList.remove("mix123");
+}
+
+
+
+
+});//koniec CLICK
+/////click cube
+
+}///koniec Two_player
+
+play_two_player.addEventListener("click",function (event) {
+  How_many_players.style.display="none";
+  btn_thru.style.display="block"
+  cube.style.display="block";
+  task.style.display="block";
+  Two_player();
+})
+
+play_three_player.addEventListener("click",function (event) {
+  How_many_players.style.display="none";
+  btn_thru.style.display="block"
+  cube.style.display="block";
+  task.style.display="block";
+  Three_player();
+})
+
+
+})
