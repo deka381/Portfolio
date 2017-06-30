@@ -291,6 +291,9 @@ const arr=[
 let current=document.querySelector(".field-1");
 let current2=document.querySelector(".field-1");
 let current3=document.querySelector(".field-1");
+let currnet_mix1;
+let currnet_mix2;
+let currnet_mix3;
 let go;
 let go2;
 let go3;
@@ -432,8 +435,8 @@ else{   //player 2
 doIt.innerText='';
  }
 
- let currnet_mix2=document.querySelector(".field-"+count2);
- let currnet_mix1=document.querySelector(".field-"+count);
+ currnet_mix2=document.querySelector(".field-"+count2);
+ currnet_mix1=document.querySelector(".field-"+count);
    if (count==count2) {
      currnet_mix1.classList.add("mix12")
      currnet_mix2.classList.add("mix12");
@@ -456,8 +459,13 @@ btn_thru3.addEventListener("click",function(){
   if (turn==1) {
     btn_thru3.style.backgroundColor="blue"
     btn_thru3.innerText="Rzuca Grasz 2"
-  if (count >50) {
+  if (count >=50) {
     doIt.innerText="WYGRAŁEŚ";
+    again_chine_fn();
+    win50.style.backgroundColor="gold";
+
+
+
   }
     else{
       player1.style.background="none";
@@ -519,8 +527,10 @@ doIt3.innerText='';
 else if(turn==2){   //player 2
   btn_thru3.style.backgroundColor="green"
   btn_thru3.innerText="Rzuca Grasz 3"
-  if (count2 >50) {
+  if (count2 >=50) {
     doIt2.innerText="WYGRAŁEŚ";
+    again_chine_fn();
+    win50.style.backgroundColor="gold";
   }
     else{
       player1.style.background="none";
@@ -581,8 +591,10 @@ doIt3.innerText='';
  else if (turn==3) {
    btn_thru3.style.backgroundColor="red"
    btn_thru3.innerText="Rzuca Grasz 1"
-    if (count3 >50) {
+    if (count3 >=50) {
      doIt3.innerText="WYGRAŁEŚ";
+     again_chine_fn();
+     win50.style.backgroundColor="gold";
     }else{
        player1.style.background="none";
        let numberClass=RandomNumber();
@@ -639,9 +651,9 @@ doIt3.innerText='';
  }
 //Koniec PL2
 //
-let currnet_mix1=document.querySelector(".field-"+count);
-let currnet_mix2=document.querySelector(".field-"+count2);
-let currnet_mix3=document.querySelector(".field-"+count3);
+currnet_mix1=document.querySelector(".field-"+count);
+currnet_mix2=document.querySelector(".field-"+count2);
+currnet_mix3=document.querySelector(".field-"+count3);
   if (count==count2) {
     currnet_mix2.classList.add("mix12");
     currnet_mix1.classList.add("mix12");
@@ -692,7 +704,7 @@ if (count==count2 && count==count3 && count2==count3) {
 play_two_player.addEventListener("click",function (event) {
 
   current.style.background="none";
-  current2.style.background="none";;
+  current2.style.background="none";
   How_many_players.style.display="none";
   btn_thru3.style.display="none";
   btn_thru.style.display="block"
@@ -707,11 +719,18 @@ play_two_player.addEventListener("click",function (event) {
 })
 
 play_three_player.addEventListener("click",function (event) {
+
+  current.style.background="none";
+  current2.style.background="none";
+  current3.style.background="none";
   How_many_players.style.display="none";
   btn_thru.style.display="none";
   btn_thru3.style.display="block";
   cube.style.display="block";
   task.style.display="block";
+  go.style.background="none";
+  go2.style.background="none";
+  go3.style.background="none";
   turn=1;
   count=1;
   count2=1;
