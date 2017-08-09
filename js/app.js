@@ -15,13 +15,13 @@ $(".arrow_2_top").click(function (){
 // arrow_2_down
 $(".arrow_2_down").click(function (){
     $('html, body').animate({
-      scrollTop: $('#slide_3').offset().top
+      scrollTop: $('#slide_pages').offset().top
 }, 500, 'linear');
 });
 // arrow_3_top
 $(".arrow_3_top").click(function (){
     $('html, body').animate({
-      scrollTop: $('#slide_2').offset().top
+      scrollTop: $('#slide_pages').offset().top
 }, 500, 'linear');
 });
 // arrow_3_down
@@ -60,6 +60,11 @@ $(".fa-gamepad_click").click(function (){
 });
 
 $(".fa-code_click").click(function (){
+    $('html, body').animate({
+      scrollTop: $('#slide_pages').offset().top
+}, 500, 'linear');
+});
+$(".fa-skill_click").click(function (){
     $('html, body').animate({
       scrollTop: $('#slide_3').offset().top
 }, 500, 'linear');
