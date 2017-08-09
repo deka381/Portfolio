@@ -496,6 +496,72 @@ filter: blur(1px);
 }//slide21_end
 
 
+// SLIDE PAGES START
+
+#slide_pages{
+  background-image: url('../images/pages-back2.jpg');
+  background-size: cover;
+  height: auto;
+  .arrow_pages_top{
+    position: relative;
+    @include arrow(bottom);
+    left: 47%;
+    border-bottom: 30px solid #f1c40f ;
+  }
+  h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Barrio', cursive;
+  }
+  .col-12{
+    position: relative;
+    height: 70px;
+     display: flex;
+    justify-content: center;
+
+  }
+  .arrow_pages_down{
+    @include arrow(top);
+    position: absolute ;
+    border-top: 30px solid #f1c40f ;
+    margin-bottom: 30px;
+  }
+  .col-4{
+    background-color: rgba(0,0,0,0.3);
+    -webkit-box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
+    box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
+    border: 1px solid black;
+    margin-top: 10px;
+    .img-page{
+      height: 200px;     
+      width: 80%;
+    }
+    .pushbin{
+      width: 30px;
+      height: 30px;
+      float: left; 
+    }
+    .pushbin2{
+      width: 30px;
+      height: 30px;
+      float: right; 
+    }
+    p{
+      color: rgba(255,255,255,0.6);
+      font-weight: 600;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    a{
+      color: orange;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      &:hover{
+        font-weight: bold;
+      }
+    }
+  }
+}
 
   ////alkochinczyk stop
 //slide 4
@@ -919,6 +985,74 @@ filter: blur(1px);
 
 
 
+// SLIDE PAGES START
+
+#slide_pages{
+  background-image: url('../images/pages-back2.jpg');
+  background-size: cover;
+  height: auto;
+  .arrow_pages_top{
+    position: relative;
+    @include arrow(bottom);
+    left: 47%;
+    border-bottom: 30px solid #f1c40f ;
+  }
+  h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Barrio', cursive;
+  }
+  .col-12{
+    position: relative;
+    height: 70px;
+     display: flex;
+    justify-content: center;
+
+  }
+  .arrow_pages_down{
+    @include arrow(top);
+    position: absolute ;
+    border-top: 30px solid #f1c40f ;
+    margin-bottom: 30px;
+  }
+  .col-4{
+    background-color: rgba(0,0,0,0.3);
+    -webkit-box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
+    box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
+    border: 1px solid black;
+    margin-top: 10px;
+    .img-page{
+      height: 200px;     
+      width: 80%;
+    }
+    .pushbin{
+      width: 30px;
+      height: 30px;
+      float: left; 
+    }
+    .pushbin2{
+      width: 30px;
+      height: 30px;
+      float: right; 
+    }
+    p{
+      color: rgba(255,255,255,0.6);
+      font-weight: 600;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    a{
+      color: orange;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      &:hover{
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+//slide 3 start
 
 #slide_3{
   background-image: url("../images/cup.jpg");
@@ -1463,6 +1597,72 @@ filter: blur(1px);
 
 
 
+// SLIDE PAGES START
+
+#slide_pages{
+  background-image: url('../images/pages-back2.jpg');
+  background-size: cover;
+  height: auto;
+  .arrow_pages_top{
+    position: relative;
+    @include arrow(bottom);
+    left: 47%;
+    border-bottom: 30px solid #f1c40f ;
+  }
+  h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Barrio', cursive;
+  }
+  .col-12{
+    position: relative;
+    height: 70px;
+     display: flex;
+    justify-content: center;
+
+  }
+  .arrow_pages_down{
+    @include arrow(top);
+    position: absolute ;
+    border-top: 30px solid #f1c40f ;
+    margin-bottom: 30px;
+  }
+  .col-4{
+    background-color: rgba(0,0,0,0.3);
+    -webkit-box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
+    box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
+    border: 1px solid black;
+    margin-top: 10px;
+    .img-page{
+      height: 200px;     
+      width: 80%;
+    }
+    .pushbin{
+      width: 30px;
+      height: 30px;
+      float: left; 
+    }
+    .pushbin2{
+      width: 30px;
+      height: 30px;
+      float: right; 
+    }
+    p{
+      color: rgba(255,255,255,0.6);
+      font-weight: 600;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    a{
+      color: orange;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      &:hover{
+        font-weight: bold;
+      }
+    }
+  }
+}
 
 // SLIDE 3 start
 
