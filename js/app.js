@@ -18,6 +18,18 @@ $(".arrow_2_down").click(function (){
       scrollTop: $('#slide_pages').offset().top
 }, 500, 'linear');
 });
+// arrow_pages_top
+$(".arrow_pages_top").click(function (){
+    $('html, body').animate({
+      scrollTop: $('#slide_2').offset().top
+}, 500, 'linear');
+});
+// arrow_3_top
+$(".arrow_pages_down").click(function (){
+    $('html, body').animate({
+      scrollTop: $('#slide_3').offset().top
+}, 500, 'linear');
+});
 // arrow_3_top
 $(".arrow_3_top").click(function (){
     $('html, body').animate({
