@@ -272,16 +272,16 @@ let count=1;
 let count2=1
 let count3=1
 const arr=[
-  "Piją wszyscy","Pijesz Ty i kolega","Mateusz stawia WSZYSTKIM !","Mateusz gdzie jest to PIWo !?","Każ wypić komuś 2 razy",
-  "Wracasz na start!","Mateusz gdzie jest to PIWo !?","Pije ślicznotka, którą wybierzesz","Opuszczasz kojelkę",
+  "Piją wszyscy","Pijesz Ty i kolega","Arek stawia WSZYSTKIM !","Mateusz gdzie jest to PIWo !?","Każ wypić komuś 2 razy",
+  "Wracasz na start!","Iza gdzie jest to PIWo !?","Pije ślicznotka, którą wybierzesz","Opuszczasz kojelkę",
   "Jak skończy się alko to idziesz je kupić","Pijesz Tyle ile masz oczu","PIJ! :)","Mateusz stawia WSZYSTKIM !","Piją Ci co mają wiek nieparzysty",
-  "Mateusz stawia WSZYSTKIM !","Cofasz się na pole 9","Nie masz przy sobie 10zł, pijesz","Pijecie wszyscy",
+  "Ola stawia WSZYSTKIM !","Cofasz się na pole 9","Nie masz przy sobie 10zł, pijesz","Pijecie wszyscy",
   "Kto jest przed Tobą, pije","Ten kto ma najmniej monet przy sobie pije","Pije każdy kto ma siostrę","JEEEZUU pijżesz","Rzuć monetą, będzie orzeł to pij- jak prawdziwy POLAK",
-  "Wracasz na 7 i pijesz jeszcze raz","Piją wszyscy","Mateusz gdzie jest to PIWo !?","Piją wszyscy oprócz Cb","Piją Chłopaki",
-  "Mateusz gdzie jest to PIWo !?","Wracasz na start!","Ktoś Pije dwa Razy","Pije ślicznotka, którą wybierzesz","Opuszczasz kojelkę",
+  "Wracasz na 7 i pijesz jeszcze raz","Piją wszyscy","Antoni gdzie jest to PIWo !?","Piją wszyscy oprócz Cb","Piją Chłopaki",
+  "Marek gdzie jest to PIWo !?","Wracasz na start!","Ktoś Pije dwa Razy","Pije ślicznotka, którą wybierzesz","Opuszczasz kojelkę",
   "Jak skończy się alko to idziesz je kupić","Pijesz Tyle ile masz oczu","PIJ! :)","NIC","Piją Ci co mają wiek nieparzysty",
-  "Mateusz stawia WSZYSTKIM !","Cofasz się na pole 9","Nie masz przy sobie 10zł, pijesz","Pijecie wszyscy",
-  "Kto jest przed Tobą, pije","Mateusz stawia WSZYSTKIM !","Pije każdy kto ma siostrę","JEEEZUU pijżesz","Rzuć monetą, będzie orzeł to pij- jak prawdziwy POLAK",
+  "Zbyszek stawia WSZYSTKIM !","Cofasz się na pole 9","Nie masz przy sobie 10zł, pijesz","Pijecie wszyscy",
+  "Kto jest przed Tobą, pije","Piotrek stawia WSZYSTKIM !","Pije każdy kto ma siostrę","JEEEZUU pijżesz","Rzuć monetą, będzie orzeł to pij- jak prawdziwy POLAK",
   "Wracasz na 7 i pijesz jeszcze raz","Wraczasz na Start","WYGRAŁEŚ",
 ];
 
