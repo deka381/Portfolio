@@ -499,7 +499,7 @@ filter: blur(1px);
 // SLIDE PAGES START
 
 #slide_pages{
-  background-color:#ccff69;
+  background-color:#4b3832;
   background-size: cover;
   height: auto;
   .arrow_pages_top{
@@ -513,6 +513,7 @@ filter: blur(1px);
     font-size: 30px;
     font-family: 'Shadows Into Light', cursive;
     font-family: 'Alegreya', serif;
+    color:#fff4e6;
   }
   .col-12{
     position: relative;
@@ -529,28 +530,27 @@ filter: blur(1px);
   }
 
       .page-robau{
-        background-color: #96ceb4;
+        background-color: #be9b7b;
       }
       .page-esembli{
-        background-color: #ffeead;
+        background-color: #854442;
       }
       .page-calc{
-        background-color:#ff6f69;
+        background-color:#854442;
       }
       .page-reactcountry{
-        background-color: #ffcc5c;
+        background-color: #be9b7b;
       }
       .page-weather{
-        background-color: #88d8b0;
+        background-color: #be9b7b;
       }
       .page-sit{
-        background-color: #88cc69;
+        background-color: #854442;
       }
   .col-6{
     -webkit-box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
     -moz-box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
     box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
-    border: 1px solid black;
     display: flex;
     border-radius: 4px;
     padding-top: 50px;
@@ -558,10 +558,7 @@ filter: blur(1px);
     justify-content:center;
     flex-direction:column;
     opacity: 0.7;
-        &:hover{
-          opacity: 0.9;
-          border: 2px;
-        }
+      
     .topp{
       background-color: black;
       height: 100%;
@@ -570,11 +567,55 @@ filter: blur(1px);
     .img-page{
       height: 200px;     
       width: 60%;
-      opacity: 0.7;
-        &:hover{
-          opacity: 0.9;
-        }
+
+      margin-bottom:100px; 
     }
+   .img-robau .sticker-img.sticker-front{
+      @include circle-img(robau)  ;
+    }
+    .img-robau .sticker-img.sticker-back{
+      @include circle-img-back(robau)  ;
+    }
+
+    .img-esembli .sticker-img.sticker-front{
+      @include circle-img(esembli) ;
+    }
+    .img-esembli .sticker-img.sticker-back{
+      @include circle-img-back(esembli) ;
+    }
+
+    .img-calc .sticker-img.sticker-front{
+      @include circle-img(calc) ;
+    }
+    .img-calc .sticker-img.sticker-back{
+      @include circle-img-back(calc) ;
+    }
+
+    .img-reactcountry .sticker-img.sticker-front{
+      @include circle-img(reactcountry) ;
+    }
+    .img-reactcountry .sticker-img.sticker-back{
+      @include circle-img-back(reactcountry) ;
+    }
+
+    .img-weather .sticker-img.sticker-front{
+      @include circle-img(weather) ;
+      background-position-x:-10px;
+    }
+    .img-weather .sticker-img.sticker-back{
+      @include circle-img-back(weather) ;
+      background-position-x:-10px;
+    }
+
+    .img-sitOnChair .sticker-img.sticker-front{
+      @include circle-img(sitonchair) ;
+      background-position-x:-10px; 
+    }
+    .img-sitOnChair .sticker-img.sticker-back{
+      @include circle-img-back(sitonchair) ;
+      background-position-x:-10px; 
+    }
+
     p{
       color: rgba(0,0,0,0.6);
       font-weight: 600;
@@ -1017,7 +1058,7 @@ filter: blur(1px);
 
 // SLIDE PAGES START
 #slide_pages{
-  background-color:#ccff69;
+  background-color:#4b3832;
   background-size: cover;
   height: auto;
   .arrow_pages_top{
@@ -1031,6 +1072,7 @@ filter: blur(1px);
     font-size: 30px;
     font-family: 'Shadows Into Light', cursive;
     font-family: 'Alegreya', serif;
+    color:#fff4e6;
   }
   .col-12{
     position: relative;
@@ -1047,28 +1089,27 @@ filter: blur(1px);
   }
 
       .page-robau{
-        background-color: #96ceb4;
+        background-color:#be9b7b;
       }
       .page-esembli{
-        background-color: #ffeead;
+        background-color: #854442;
       }
       .page-calc{
-        background-color:#ff6f69;
+        background-color:#854442;
       }
       .page-reactcountry{
-        background-color: #ffcc5c;
+        background-color: #be9b7b;
       }
       .page-weather{
-        background-color: #88d8b0;
+        background-color: #be9b7b;
       }
       .page-sit{
-        background-color: #88cc69;
+        background-color: #854442;
       }
   .col-6{
     -webkit-box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
     -moz-box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
     box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
-    border: 1px solid black;
     display: flex;
     border-radius: 4px;
     padding-top: 50px;
@@ -1077,10 +1118,6 @@ filter: blur(1px);
     flex-direction:column;
     min-height: 393px;
     opacity: 0.7;
-        &:hover{
-          opacity: 0.9;
-          border: 2px;
-        }
     .topp{
       background-color: black;
       height: 100%;
@@ -1089,11 +1126,55 @@ filter: blur(1px);
     .img-page{
       height: 200px;     
       width: 60%;
-      opacity: 0.7;
-        &:hover{
-          opacity: 0.9;
-        }
+      
+      margin-bottom:100px; 
     }
+   .img-robau .sticker-img.sticker-front{
+      @include circle-img(robau)  ;
+    }
+    .img-robau .sticker-img.sticker-back{
+      @include circle-img-back(robau)  ;
+    }
+
+    .img-esembli .sticker-img.sticker-front{
+      @include circle-img(esembli) ;
+    }
+    .img-esembli .sticker-img.sticker-back{
+      @include circle-img-back(esembli) ;
+    }
+
+    .img-calc .sticker-img.sticker-front{
+      @include circle-img(calc) ;
+    }
+    .img-calc .sticker-img.sticker-back{
+      @include circle-img-back(calc) ;
+    }
+
+    .img-reactcountry .sticker-img.sticker-front{
+      @include circle-img(reactcountry) ;
+    }
+    .img-reactcountry .sticker-img.sticker-back{
+      @include circle-img-back(reactcountry) ;
+    }
+
+    .img-weather .sticker-img.sticker-front{
+      @include circle-img(weather) ;
+      background-position-x:-10px;
+    }
+    .img-weather .sticker-img.sticker-back{
+      @include circle-img-back(weather) ;
+      background-position-x:-10px;
+    }
+
+    .img-sitOnChair .sticker-img.sticker-front{
+      @include circle-img(sitonchair) ;
+      background-position-x:-10px; 
+    }
+    .img-sitOnChair .sticker-img.sticker-back{
+      @include circle-img-back(sitonchair) ;
+      background-position-x:-10px; 
+    }
+
     p{
       color: rgba(0,0,0,0.6);
       font-weight: 600;
@@ -1590,7 +1671,7 @@ filter: blur(1px);
 
 // SLIDE PAGES START
 #slide_pages{
-  background-color:#ccff69;
+  background-color:#4b3832;
   background-size: cover;
   height: auto;
   .arrow_pages_top{
@@ -1600,6 +1681,7 @@ filter: blur(1px);
     border-bottom: 30px solid #f1c40f ;
   }
   h2{
+    color:#fff4e6;
     text-align: center;  
     font-size: 30px;
     font-family: 'Shadows Into Light', cursive;
@@ -1620,28 +1702,27 @@ filter: blur(1px);
   }
 
       .page-robau{
-        background-color: #96ceb4;
+        background-color: #be9b7b;
       }
       .page-esembli{
-        background-color: #ffeead;
+        background-color: #854442;
       }
       .page-calc{
-        background-color:#ff6f69;
+        background-color:#854442;
       }
       .page-reactcountry{
-        background-color: #ffcc5c;
+        background-color: #be9b7b;
       }
       .page-weather{
-        background-color: #88d8b0;
+        background-color:#be9b7b;
       }
       .page-sit{
-        background-color: #88cc69;
+        background-color: #854442;
       }
   .col-6{
     -webkit-box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
     -moz-box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
     box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
-    border: 1px solid black;
     display: flex;
     border-radius: 4px;
     padding-top: 50px;
@@ -1649,10 +1730,6 @@ filter: blur(1px);
     justify-content:center;
     flex-direction:column;
     opacity: 0.7;
-        &:hover{
-          opacity: 0.9;
-          border: 2px;
-        }
     .topp{
       background-color: black;
       height: 100%;
@@ -1661,11 +1738,53 @@ filter: blur(1px);
     .img-page{
       height: 200px;     
       width: 60%;
-      opacity: 0.7;
-        &:hover{
-          opacity: 0.9;
-        }
-    }
+      margin-bottom:100px;      }
+     .img-robau .sticker-img.sticker-front{
+        @include circle-img(robau)  ;
+      }
+      .img-robau .sticker-img.sticker-back{
+        @include circle-img-back(robau)  ;
+      }
+
+      .img-esembli .sticker-img.sticker-front{
+        @include circle-img(esembli) ;
+      }
+      .img-esembli .sticker-img.sticker-back{
+        @include circle-img-back(esembli) ;
+      }
+
+      .img-calc .sticker-img.sticker-front{
+        @include circle-img(calc) ;
+      }
+      .img-calc .sticker-img.sticker-back{
+        @include circle-img-back(calc) ;
+      }
+
+      .img-reactcountry .sticker-img.sticker-front{
+        @include circle-img(reactcountry) ;
+      }
+      .img-reactcountry .sticker-img.sticker-back{
+        @include circle-img-back(reactcountry) ;
+      }
+
+      .img-weather .sticker-img.sticker-front{
+        @include circle-img(weather) ;
+        background-position-x:-10px;
+      }
+      .img-weather .sticker-img.sticker-back{
+        @include circle-img-back(weather) ;
+        background-position-x:-10px;
+      }
+
+      .img-sitOnChair .sticker-img.sticker-front{
+        @include circle-img(sitonchair) ;
+        background-position-x:-10px; 
+      }
+      .img-sitOnChair .sticker-img.sticker-back{
+        @include circle-img-back(sitonchair) ;
+        background-position-x:-10px; 
+      }
+
     p{
       color: rgba(0,0,0,0.6);
       font-weight: 600;
@@ -1688,7 +1807,7 @@ filter: blur(1px);
 // SLIDE PAGES START
 
 #slide_pages{
-  background-color:#ccff69;
+  background-color:#4b3832;
   background-size: cover;
   height: auto;
   .arrow_pages_top{
@@ -1700,6 +1819,7 @@ filter: blur(1px);
   h2{
     text-align: center;  
     font-size: 30px;
+    color:#fff4e6;
   }
   .col-12{
     position: relative;
@@ -1716,53 +1836,94 @@ filter: blur(1px);
   }
 
       .page-robau{
-        background-color: #96ceb4;
+        background-color: #be9b7b;
       }
       .page-esembli{
-        background-color: #ffeead;
+        background-color: #854442;
       }
       .page-calc{
-        background-color:#ff6f69;
+        background-color:#854442;
       }
       .page-reactcountry{
-        background-color: #ffcc5c;
+        background-color: #be9b7b;
       }
       .page-weather{
-        background-color: #88d8b0;
+        background-color: #be9b7b;
       }
       .page-sit{
-        background-color: #88cc69;
+        background-color: #854442;
       }
   .col-6{
     -webkit-box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
     -moz-box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
     box-shadow: -11px 18px 29px 5px rgba(0,0,0,0.75);
-    border: 1px solid black;
     display: flex;
     border-radius: 4px;
     padding-top: 50px;
     align-items:center;
     justify-content:center;
     flex-direction:column;
-    opacity: 0.7;
-        &:hover{
-          opacity: 0.9;
-          border: 2px;
-        }
+   
     .topp{
       background-color: black;
       height: 100%;
       width: 100%;
     }    
     .img-page{
-      height: 200px;     
-      width: 60%;
-      opacity: 0.7;
-        &:hover{
-          opacity: 0.9;
+      height: 300px;     
+      width: 60%; 
+      margin-bottom:100px; 
+             }
+       .img-robau .sticker-img.sticker-front{
+          @include circle-img(robau)  ;
         }
-    }
-    p{
+        .img-robau .sticker-img.sticker-back{
+          @include circle-img-back(robau)  ;
+        }
+
+        .img-esembli .sticker-img.sticker-front{
+          @include circle-img(esembli) ;
+        }
+        .img-esembli .sticker-img.sticker-back{
+          @include circle-img-back(esembli) ;
+        }
+
+        .img-calc .sticker-img.sticker-front{
+          @include circle-img(calc) ;
+        }
+        .img-calc .sticker-img.sticker-back{
+          @include circle-img-back(calc) ;
+        }
+
+        .img-reactcountry .sticker-img.sticker-front{
+          @include circle-img(reactcountry) ;
+        }
+        .img-reactcountry .sticker-img.sticker-back{
+          @include circle-img-back(reactcountry) ;
+        }
+
+        .img-weather .sticker-img.sticker-front{
+          @include circle-img(weather) ;
+          background-position-x:-10px;
+        }
+        .img-weather .sticker-img.sticker-back{
+          @include circle-img-back(weather) ;
+          background-position-x:-10px;
+        }
+
+        .img-sitOnChair .sticker-img.sticker-front{
+          @include circle-img(sitonchair) ;
+          background-position-x:-10px; 
+        }
+        .img-sitOnChair .sticker-img.sticker-back{
+          @include circle-img-back(sitonchair) ;
+          background-position-x:-10px; 
+        }
+
+
+// add image
+
+p{
       color: rgba(0,0,0,0.6);
       font-weight: 600;
       margin-top : 7px;
@@ -1779,7 +1940,6 @@ filter: blur(1px);
     }
   }
 }
-
 // SLIDE 3 start
 
 #slide_3{
@@ -1789,7 +1949,7 @@ filter: blur(1px);
   .arrow_3_top{
     position: relative;
     @include arrow(bottom);
-    left: 47%;
+    margin: 0 auto;
     border-bottom: 30px solid #f1c40f ;
   }
 
@@ -1803,7 +1963,7 @@ filter: blur(1px);
         @include arrow(top);
         border-top: 30px solid #f1c40f ;
         margin-bottom: 30px;
-
+        margin-top:40px;
     }
   }
 

@@ -1,5 +1,5 @@
 $(document).ready(function (){
-
+Sticker.init('.sticker');
 //arrow-1
 $(".arrow_1").click(function (){
    $('html, body').animate({

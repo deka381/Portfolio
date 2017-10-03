@@ -11,3 +11,13 @@
     height: 0;
     width: 0;
 }
+@mixin circle-img($link){
+      background-image:url('../images/#{$link}.png');
+      background-size: cover;
+      background-position-x:-50px;
+}
+@mixin circle-img-back($link){
+      background-image:url('../images/#{$link}.png');
+      background-size: cover;
+      background-position-x:-50px;
+}
